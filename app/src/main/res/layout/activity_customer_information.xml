@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerInformationActivity">
+
+    <TextView
+        android:id="@+id/sname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#4f4f4f"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="36dp"/>
+
+    <TextView
+        android:id="@+id/deliveryState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="배송중"
+        android:textColor="#4f4f4f"
+        android:textSize="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sname"/>
+
+    <Button
+        android:id="@+id/statusChangeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="배송완료"
+        android:textSize="18dp"
+        android:textColor="#fdfdfd"
+        android:textStyle="bold"
+        android:background="#3498DB"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deliveryState"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="배송 완료 버튼을 누르면 \n 상태가 배송완료로 바뀝니다."
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusChangeButton"/>
+
+    <Button
+        android:id="@+id/ic_call"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:padding="0dp"
+        android:background="@drawable/ic_call_black"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ic_text_message"
+        app:layout_constraintTop_toBottomOf="@+id/content"/>
+
+    <Button
+        android:id="@+id/ic_text_message"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:padding="0dp"
+        android:background="@drawable/ic_text_message_black"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="56dp"
+        app:layout_constraintStart_toStartOf="@+id/ic_call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content"/>
+
+    <Button
+        android:id="@+id/showSenderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="발신자 정보 보기 >>"
+        android:background="@android:color/transparent"
+        android:textSize="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>

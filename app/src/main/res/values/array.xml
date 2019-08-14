@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="company_array">
+        <item>우체국택배</item>
+        <item>CJ대한통운</item>
+        <item>로젠택배</item>
+        <item>한진택배</item>
+        <item>현대택배</item>
+        <item>UPS</item>
+        <item>DHL</item>
+        <item>KGB택배</item>
+        <item>경동택배</item>
+        <item>kG로지스</item>
+        <item>대신택배</item>
+    </string-array>
+</resources>
